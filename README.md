@@ -381,6 +381,13 @@ On branch main
 nothing to commit, working tree clean
 ```
 
+## Check for Understanding
+
+Before moving on to the next lesson, check for your understanding of this material
+by answering the following question in your own words:
+
+- What are branches and how does using them help us?
+
 ## Conclusion
 
 In this lesson, we've learned how to create a new branch where we can make
