@@ -82,18 +82,17 @@ Then add the following to the document:
 
 ## Books
 
-- _Composing Programs (Chapter 1-2)_ [Free]
+- Composing Programs (Chapter 1-2) [Free]
   - This is a great book for learning compsci concepts in addition to Python
-- _Automate the Boring Stuff with Python_ [Free]
+- Automate the Boring Stuff with Python [Free]
   - Has short, easy projects that involve different modules
-- _Python Crash Course , 2nd Ed_
+- Python Crash Course , 2nd Ed
   - Beginner friendly intro to fundamental concepts 
 ```
 
 Recall that, when using markdown, we use `#` and `##` to indicate our top- and
 second-level headers, respectively. In addition, note that we can create a
-nested list by simply indenting the nested elements. Finally, we're wrapping the
-book titles with underscores ( `_` ) to display them in italics.
+nested list by simply indenting the nested elements.
 
 Once you've entered the books, add and commit your changes. If you run `git
 log`, it should look something like this:
@@ -281,7 +280,7 @@ Let's switch back to our `main` branch and add another book to the end of our
 list:
 
 ```md
-- _Serious Python_
+- Serious Python
   - Does a great job of explaining some of the more difficult topics not covered
     in depth in the beginner books
 ```
@@ -383,7 +382,7 @@ nothing to commit, working tree clean
 
 ## Check for Understanding
 
-Before moving on to the next lesson, check for your understanding of this material
+Before moving on to the next lesson, check your understanding of this material
 by answering the following question in your own words:
 
 - What are branches and how does using them help us?
