@@ -5,6 +5,7 @@
 - Explain what branches are and why they're useful.
 - List and create branches with the `git branch` command.
 - Navigate between branches with the `git switch` and `git checkout` commands.
+- Compare branches with `git diff`.
 - Stash changes with the `git stash` command.
 
 ## Introduction
@@ -269,8 +270,46 @@ the entire history of our `add-links` branch.
 **Question**: if we were to switch back to the `main` branch and run `git log`, what
 would we see? If you aren't sure, go ahead and try it!
 
-Once we've added our hyperlinks and everything is looking the way we want it to,
-the next step is to merge the changes we made in `add-links` into the `main`
+### Compare Branches with `git diff`
+
+Recall in an earlier lesson, we learned that we can use the `git diff` command
+to compare either the differences between our working directory and an earlier
+commit, or between any two commits. We can also use it to compare branches!
+
+Now that we've committed our changes to the `add-links` branch, we can use the
+following command to compare our two branches:
+
+```console
+$ git diff main add-links
+diff --git a/python-resources.md b/python-resources.md
+index 26ca4f7..fdfd20f 100644
+--- a/python-resources.md
++++ b/python-resources.md
+@@ -2,10 +2,10 @@
+ 
+ ## Books
+ 
+-- Composing Programs (Chapter 1-2) [Free]
++- [Composing Programs (Chapter 1-2)](https://composingprograms.com/) [Free]
+   - This is a great book for learning compsci concepts in addition to Python
+-- Automate the Boring Stuff with Python [Free]
++- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) [Free]
+   - Has short, easy projects that involve different modules
+-- Python Crash Course , 2nd Ed
++- [Python Crash Course , 2nd Ed](https://nostarch.com/pythoncrashcourse2e)
+   - Beginner friendly intro to fundamental concepts
+```
+
+The output above shows that each line containing a book title has been removed
+from the earlier version of the file (in `main`) and replaced (in `add-links`)
+with a line that includes the links.
+
+Note that you can list the names of the branches to be compared in whichever
+order makes sense to you. We have listed `main` first in keeping with the
+convention of having the `a` file represent the earlier point in time.
+
+Now that we've added our hyperlinks and everything is looking the way we want it
+to, the next step is to merge the changes we made in `add-links` into the `main`
 branch. We'll learn how to do that in the next lesson, but first, there's one
 last situation we need to cover.
 
@@ -285,7 +324,7 @@ list:
     in depth in the beginner books
 ```
 
-Save the file, but don't stage or commit it, then try to switch back into the
+Save the file, but **don't** stage or commit it, then try to switch back into the
 `add-links` branch:
 
 ```console
