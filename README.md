@@ -1,4 +1,4 @@
-# Git Branches
+# Working with Branches
 
 ## Learning Goals
 
